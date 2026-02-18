@@ -5,59 +5,41 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-
         Scanner scanner = new Scanner(System.in);
-
-        // hk 99 Task one
-        System.out.print("enter  num: ");
-        int num1=scanner.nextInt();
-        int result= Math.abs(num1);
-
-        System.out.println("result = "+result);
-
-
-        System.out.print("Enter a number: ");
-        int inputNumber = scanner.nextInt();
-
-
-        System.out.println("Enter the first number");
-        int num11 = scanner.nextInt();
-        System.out.println("Enter the 2nd number");
+        System.out.print("Enter the 1st number: ");
+        int num1= scanner.nextInt();
+        System.out.print("Enter the 2nd number: ");
         int num2 = scanner.nextInt();
-
+        System.out.println();
+// ----------------------------------------------------------------------------------------
+        // hk 99 Task one
+        int result = Math.abs(num1);
+        System.out.println("The absolute number of " + num1 + " is " + result);
+// ----------------------------------------------------------------------------------------
         // Square Generation
-        System.out.println("Enter a number: ");
-        int num = scanner.nextInt();
-        int result1 = num * num;
-        System.out.println("Square of "+ num + " is :" + result1);
-
-
+        int result1 = num1 * num1;
+        System.out.println("Square of " + num1 + " is :" + result1);
+// ----------------------------------------------------------------------------------------
         // Power Function
-        System.out.println("Enter base number: ");
-        int base = scanner.nextInt();
-        System.out.println("Enter exponent: ");
-        int exponent = scanner.nextInt();
         int power = 1;
-        for (int i = 1; i <= exponent; i++) {
-            power = power * base;
+        for (int i = 1; i <= num1; i++) {
+            power = power * num2;
         }
-        System.out.println("Result: " + power);
-
-        
+        System.out.println("Power of two numbers = " + power);
+// ----------------------------------------------------------------------------------------
         // Calculation using modulus operator
-        if (inputNumber % 2 == 0) {
-            System.out.println("Result: Even");
+        if (num1 % 2 == 0) {
+            System.out.println("Number " + num1 + " is Even");
         } else {
-            System.out.println("Result: Odd");
+            System.out.println("Number " + num1 + " is Odd");
         }
-
+// ----------------------------------------------------------------------------------------
         //factorial function
         int Function = 1;
-        for (int i = 1;i < num11;i++){
+        for (int i = 1; i < num1; i++) {
             Function = Function * i;
         }
-        System.out.println("Factorial of " + num11 + " is :" + Function);
-
+        System.out.println("Factorial of " + num1 + " is " + Function);
         scanner.close();
     }
 }
