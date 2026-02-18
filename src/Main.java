@@ -12,6 +12,7 @@ public class Main {
         int result = num * num;
         System.out.println("Result: " + result);
 
+        // Power Function
         System.out.println("Enter base number: ");
         int base = input.nextInt();
         System.out.println("Enter exponent: ");
@@ -22,5 +23,6 @@ public class Main {
         }
         System.out.println("Result: " + power);
         }
+
 
 }
