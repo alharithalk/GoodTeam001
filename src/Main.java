@@ -12,5 +12,15 @@ public class Main {
         int result = num * num;
         System.out.println("Result: " + result);
 
+        System.out.println("Enter base number: ");
+        int base = input.nextInt();
+        System.out.println("Enter exponent: ");
+        int exponent = input.nextInt();
+        int power = 1;
+        for (int i = 1; i <= exponent; i++) {
+            power = power * base;
         }
-    }
+        System.out.println("Result: " + power);
+        }
+
+}
