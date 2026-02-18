@@ -16,9 +16,6 @@ public class Main {
         System.out.println("result = "+result);
 
 
-
-
-
         System.out.print("Enter a number: ");
         int inputNumber = scanner.nextInt();
 
@@ -37,9 +34,9 @@ public class Main {
 
         // Power Function
         System.out.println("Enter base number: ");
-        int base = input.nextInt();
+        int base = scanner.nextInt();
         System.out.println("Enter exponent: ");
-        int exponent = input.nextInt();
+        int exponent = scanner.nextInt();
         int power = 1;
         for (int i = 1; i <= exponent; i++) {
             power = power * base;
