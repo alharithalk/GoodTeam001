@@ -6,6 +6,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        // Square Generation
+        System.out.println("Enter a number: ");
+        int num = input.nextInt();
+        int result = num * num;
+        System.out.println("Result: " + result);
 
         }
     }
