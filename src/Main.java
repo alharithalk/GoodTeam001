@@ -6,10 +6,18 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+
         System.out.println("Enter the first number");
         int num1 = input.nextInt();
         System.out.println("Enter the 2nd number");
         int num2 = input.nextInt();
+
+        // Square Generation
+        System.out.println("Enter a number: ");
+        int num = input.nextInt();
+        int result = num * num;
+        System.out.println("Square of "+ num + " is :" + result);
+
 
         //factorial function
         int Function = 1;
