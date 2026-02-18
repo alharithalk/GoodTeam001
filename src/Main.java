@@ -7,8 +7,15 @@ public class Main {
         Scanner input = new Scanner(System.in);
         Scanner scanner = new Scanner(System.in);
 
+
         System.out.print("Enter a number: ");
         int inputNumber = scanner.nextInt();
+
+        // Square Generation
+        System.out.println("Enter a number: ");
+        int num = input.nextInt();
+        int result = num * num;
+        System.out.println("Result: " + result);
 
         // Calculation using modulus operator
         if (inputNumber % 2 == 0) {
