@@ -18,14 +18,14 @@ public class Main {
 // ----------------------------------------------------------------------------------------
         // Square Generation
         int result1 = num1 * num1;
-        System.out.println("Square of " + num1 + " is :" + result1);
+        System.out.println("Square of " + num1 + " is " + result1);
 // ----------------------------------------------------------------------------------------
         // Power Function
         int power = 1;
-        for (int i = 1; i <= num1; i++) {
-            power = power * num2;
+        for (int i = 1; i <= num2; i++) {
+            power = power * num1;
         }
-        System.out.println("Power of two numbers = " + power);
+        System.out.println("Power of " + num1 + "^" + num2 + " is " + power);
 // ----------------------------------------------------------------------------------------
         // Calculation using modulus operator
         if (num1 % 2 == 0) {
@@ -36,7 +36,7 @@ public class Main {
 // ----------------------------------------------------------------------------------------
         //factorial function
         int Function = 1;
-        for (int i = 1; i < num1; i++) {
+        for (int i = 1; i <= num1; i++) {
             Function = Function * i;
         }
         System.out.println("Factorial of " + num1 + " is " + Function);
